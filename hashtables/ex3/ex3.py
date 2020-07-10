@@ -2,9 +2,16 @@ def intersection(arrays):
     """
     YOUR CODE HERE
     """
-    # Your code here
-
-    return result
+    no_dupes = {}
+    dupes = []
+    
+    for array in arrays:
+        for num in array:
+            if num in no_dupes and num not in dupes:
+                dupes.append(num)
+            else:
+                no_dupes[num] = "ok"
+    return dupes
 
 
 if __name__ == "__main__":
