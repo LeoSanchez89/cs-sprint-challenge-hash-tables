@@ -9,7 +9,7 @@ class TestEx2(unittest.TestCase):
         files = [
             '/bin/foo',
             '/bin/bar',
-            '/usr/bin/baz'
+            '/usr/bin/baz',
         ]
         queries = [
             "foo",
